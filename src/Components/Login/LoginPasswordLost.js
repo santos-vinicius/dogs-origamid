@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const LoginPasswordLost = () => {
+const LoginPasswordLost = () => {
   return <div>LoginPasswordLost</div>;
 };
 
