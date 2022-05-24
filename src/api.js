@@ -30,7 +30,22 @@ export function USER_GET(token) {
     url: API_URL + '/api/user',
     options: {
       method: 'GET',
-      headers: {}
+      headers: {
+        Authorization: 'Bearer ' + token
+      }
+    }
+  };
+}
+
+export function USER_POST(body) {
+  return {
+    url: API_URL + '/api/user',
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
     }
   };
 }
